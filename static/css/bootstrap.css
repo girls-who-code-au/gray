@@ -750,6 +750,10 @@ pre code {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+  -webkit-animation:rainbow .1s infinite;
+-ms-animation:rainbow .5s infinite;
+-o-animation:rainbow .5s infinite;
+animation:rainbow .5s infinite;
 }
 
 .container:before,
