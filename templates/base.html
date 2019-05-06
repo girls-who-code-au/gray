@@ -60,6 +60,13 @@
     <script src="{% static '/static/js/main.js' %}"></script>
   </body>
 
+  <httpProtocol>
+  <customHeaders>
+    <add name="Content-Security-Policy" value="frame-ancestors https://docs.google.com" />
+    <!-- Test this option as Chrome supports CSP now for Iframe opening-->
+  </customHeaders>
+  </httpProtocol>
+
   {% block scripts %}
   {% endblock %}
 </html>
